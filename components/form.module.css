@@ -1,6 +1,6 @@
 .form {
   width: 300px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .field {
@@ -24,12 +24,13 @@
   border-radius: 3px;
   width: 200px;
   padding: 6px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .input:focus {
   outline: none;
-  border-color: #008BFF;
+  border-color: #008bff;
 }
 
 .messageField {
@@ -41,24 +42,28 @@
   height: 100px;
   margin-top: 5px;
   border-color: lightgrey;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-radius: 5px;
   border-width: thin;
   padding: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .messageInput:focus {
-  border-color: #008BFF;
+  border-color: #008bff;
   outline: none;
 }
 
 .submit {
   margin-top: 10px;
-  background-color: #008BFF;
+  background-color: #008bff;
   cursor: pointer;
   border: none;
   border-radius: 3px;
   padding: 7px;
   color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }

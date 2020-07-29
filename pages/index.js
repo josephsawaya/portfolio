@@ -1,6 +1,13 @@
 import Head from "next/head";
 import Form from "../components/form";
-export default function Home() {
+
+import remark from "remark";
+import html from "remark-html";
+import path from "path";
+import matter from "gray-matter";
+import fs from "fs";
+
+export default function Home({ contentHtml }) {
   return (
     <div className="container">
       <Head>
@@ -20,11 +27,29 @@ export default function Home() {
         </li>
       </ul>
       <div id="projects"></div>
-      <div id="about-me"></div>
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} s />
       <div id="contact">
         <Form />
       </div>
       <style jsx>{``}</style>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const aboutDoc = path.join(process.cwd(), "components", "about.md");
+  const fileContents = fs.readFileSync(aboutDoc, "utf8");
+
+  const matterResult = matter(fileContents);
+
+  const processedContent = await remark()
+    .use(html)
+    .process(matterResult.content);
+
+  const contentHtml = processedContent.toString();
+  return {
+    props: {
+      contentHtml,
+    },
+  };
 }
