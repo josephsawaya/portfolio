@@ -35,6 +35,9 @@ const Form = () => {
   };
   return (
     <form className={styles.form} onSubmit={checkFormValidity}>
+      <div className={styles.title}>
+        <h2>Contact me</h2>
+      </div>
       <div className={styles.field}>
         <label className={styles.label}>Name</label>
         <input

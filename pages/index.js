@@ -42,6 +42,7 @@ export default function Home({ contentHtml, projects }) {
           })}
         </div>
         <About contentHtml={contentHtml} />
+
         <div id="contact">
           <Form />
         </div>

@@ -29,26 +29,34 @@ export default function Post(val) {
           );
         })}
       </div>
-      <a className="github" href={val.github}>
-        GitHub Repo
-      </a>
-      <a className="demo" href={val.demo}>
-        Demo
-      </a>
+      {val.github ? (
+        <a className="github" href={val.github}>
+          GitHub Repo
+        </a>
+      ) : null}
+      {val.demo ? (
+        <a className="demo" href={val.demo}>
+          Demo
+        </a>
+      ) : null}
       <div dangerouslySetInnerHTML={{ __html: val.contentHtml }}></div>
-      <h2>Images</h2>
-      <div>
-        {val.images.map((img) => {
-          return (
-            <img
-              className="sc"
-              src={`/${img.name}`}
-              alt={img.name}
-              key={img.name}
-            ></img>
-          );
-        })}
-      </div>
+      {val.images ? (
+        <>
+          <h2>Images</h2>
+          <div>
+            {val.images.map((img) => {
+              return (
+                <img
+                  className="sc"
+                  src={`/${img.name}`}
+                  alt={img.name}
+                  key={img.name}
+                ></img>
+              );
+            })}
+          </div>
+        </>
+      ) : null}
       <style jsx>{`
         .date {
           color: grey;
@@ -63,6 +71,7 @@ export default function Post(val) {
         h1 {
           margin: 0;
           margin-top: 20px;
+
         }
         .tags {
           display: flex;
