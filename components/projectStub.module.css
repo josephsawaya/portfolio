@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: lightskyblue solid thin;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:hover {
+  background-color: lightskyblue;
+}
+
+.location {
+  color: grey;
+  margin-bottom: 0;
+}
+
+.date {
+  color: grey;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.dlcontainer {
+  display: flex;
+}
+
+.title {
+  margin: 0;
+}
+.tags {
+  display: flex;
+}
+
+.tags div {
+  margin-right: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
