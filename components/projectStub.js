@@ -18,7 +18,9 @@ export default function ProjectStub({ val }) {
               })}
             </div>
             <div className={styles.dlcontainer}>
-              <p className={styles.location}>Location: {val.location}</p>
+              {val.location ? (
+                <p className={styles.location}>Location: {val.location}</p>
+              ) : null}
               <p className={styles.date}>Date: {val.date}</p>
             </div>
           </div>

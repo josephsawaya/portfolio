@@ -24,4 +24,4 @@ We used a HC-SR04 Ultrasonic sensor and a HX711 Load cell for our sensors. The u
 
 For the software we found libraries that could help us interface with these sensors so all we had to do was make use of these libraries to collect the data and publish the data at a certain time interval.
 
-This was definitely not the cleanest software I've written and to be honest at the time I did not fully understand how it worked, but the team and I got it working and we were happy witht he result.
+This was definitely not the cleanest software I've written and to be honest at the time I did not fully understand how it worked, but the team and I got it working and we were happy with the result.

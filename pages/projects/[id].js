@@ -4,17 +4,21 @@ import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Post(val) {
   return (
     <div className="container">
+      <Head>
+        <title>{val.title}</title>
+      </Head>
       <Link href="/">
         <a>Back to Home</a>
       </Link>
       <h1>{val.title}</h1>
       <div className="dlcontainer">
         <p className="date">{val.date}</p>
-        <p className="location">{val.location}</p>
+        {val.location ? <p className="location">{val.location}</p> : null}
       </div>
       <div className="tags">
         {val.tags.map((tag) => {

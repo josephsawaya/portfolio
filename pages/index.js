@@ -13,7 +13,7 @@ export default function Home({ contentHtml, projects }) {
     <div className="body">
       <div className="container">
         <Head>
-          <title>Create Next App</title>
+          <title>Joseph Sawaya</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="navbar">
