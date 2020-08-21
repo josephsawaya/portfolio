@@ -27,6 +27,10 @@ body {
     height: 0;
     width: 0;
   }
+
+  .navbar h1 {
+    margin: 20px auto 0 auto;
+  }
 }
 
 .list li {
@@ -72,7 +76,8 @@ body {
   display: flex;
   font-size: larger;
   width: 100vw;
-
+  margin-bottom: 20px;
+  ;
 }
 
 html,
