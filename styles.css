@@ -14,9 +14,17 @@ body {
   margin: 0 auto 0 50px;
   padding: 0;
 }
+
 .navbar h1 {
   font-size: 2em;
   margin-left: auto;
+}
+
+@media screen and (max-width: 675px) {
+  .navbar ul {
+    visibility: hidden;
+
+  }
 }
 
 .list li {
@@ -55,10 +63,16 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 70%;
+  width: 70vw;
 }
 
 .body {
   display: flex;
   font-size: larger;
+  width: 100vw;
+
+}
+
+body {
+  margin: 0;
 }

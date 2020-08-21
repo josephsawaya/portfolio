@@ -15,6 +15,10 @@ export default function Home({ contentHtml, projects }) {
         <Head>
           <title>Joseph Sawaya</title>
           <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
         </Head>
         <div className="navbar">
           <h1>Joseph Sawaya</h1>

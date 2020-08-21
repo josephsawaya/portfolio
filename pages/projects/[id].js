@@ -25,7 +25,7 @@ export default function Post(val) {
           return (
             <div
               className="tag"
-              style={{ backgroundColor: tag.color }}
+              style={{ backgroundColor: tag.color, marginTop: "10px" }}
               key={tag.name}
             >
               {tag.name}
@@ -75,11 +75,11 @@ export default function Post(val) {
         h1 {
           margin: 0;
           margin-top: 20px;
-
         }
         .tags {
           display: flex;
           margin-bottom: 20px;
+          flex-wrap: wrap;
         }
         .tag {
           padding: 10px;
@@ -88,8 +88,9 @@ export default function Post(val) {
           margin-right: 15px;
         }
         .container {
-          width: 60%;
-          margin auto;
+          width: 80vw;
+          margin: auto;
+          margin-top: 30px;
         }
         .github {
           margin-right: 15px;
@@ -97,14 +98,14 @@ export default function Post(val) {
 
         a {
           text-decoration: none;
-          color: #0080FF;
+          color: #0080ff;
         }
         a:hover {
           text-decoration: none;
-          color: #00B2FF
+          color: #00b2ff;
         }
         .sc {
-          width:100%;
+          width: 100%;
         }
       `}</style>
     </div>

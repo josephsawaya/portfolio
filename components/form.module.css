@@ -1,8 +1,9 @@
 .form {
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 30px;
 }
+
 .title {
   display: flex;
 }
@@ -30,7 +31,7 @@
   border-style: solid;
   border-width: thin;
   border-radius: 3px;
-  width: 300px;
+  width: 30vw;
   padding: 6px;
   font-family: "Inria-Sans", sans-serif;
 }
