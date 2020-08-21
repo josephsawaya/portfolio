@@ -23,7 +23,9 @@ body {
 @media screen and (max-width: 675px) {
   .navbar ul {
     visibility: hidden;
-
+    position: absolute;
+    height: 0;
+    width: 0;
   }
 }
 
@@ -73,6 +75,9 @@ body {
 
 }
 
+html,
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
