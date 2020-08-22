@@ -11,6 +11,10 @@ export default function Post(val) {
     <div className="container">
       <Head>
         <title>{val.title}</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale = 1.0"
+        />
       </Head>
       <Link href="/">
         <a>Back to Home</a>

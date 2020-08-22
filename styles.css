@@ -31,6 +31,11 @@ body {
   .navbar h1 {
     margin: 20px auto 0 auto;
   }
+
+  .navbar ul li {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .list li {
