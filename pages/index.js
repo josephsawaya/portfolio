@@ -24,22 +24,18 @@ export default function Home({ contentHtml, projects }) {
           <h1>Joseph Sawaya</h1>
           <ul className="list">
             <li>
-              <a href="#projects">
-                <p>Projects</p>
+              <a href="https://www.linkedin.com/in/joseph-sawaya-3b4747197/">
+                <p>LinkedIn</p>
               </a>
             </li>
             <li>
-              <a href="#aboutMe">
-                <p>About Me</p>
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                <p>Contact</p>
+              <a href="https://github.com/josephsawaya">
+                <p>Github</p>
               </a>
             </li>
           </ul>
         </div>
+        <h2>Projects</h2>
         <div id="projects">
           {projects.map((val) => {
             return <ProjectStub val={val} key={val.title} />;

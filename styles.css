@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Inria-Sans";
-  src: url("/fonts/InriaSans-Bold.ttf");
-  src: url("/fonts/InriaSans-Regular.ttf");
+  font-family: "Libre";
+  src: url("/fonts/Inter.ttf");
 }
 
 body {
-  font-family: "Inria-Sans", sans-serif;
+  font-family: "Libre", "Times New Roman", Times, serif;
+  background-color: #f5f5f7;
 }
 
 .list {
@@ -47,20 +47,20 @@ body {
 }
 
 .list li a:hover {
-  color: white;
-  background-color: black;
-  border-radius: 5px;
+  color: #00b2ff;
 }
 
 .list li a {
   text-decoration: none;
-  color: black;
+  color: #0080ff;
   margin: auto;
   width: 100%;
   height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .list li a p {
@@ -82,7 +82,6 @@ body {
   font-size: larger;
   width: 100vw;
   margin-bottom: 20px;
-  ;
 }
 
 html,
@@ -90,4 +89,9 @@ body {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+h2 {
+  margin: auto;
+  width: fit-content;
 }

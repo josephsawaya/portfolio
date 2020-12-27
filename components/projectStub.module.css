@@ -1,18 +1,17 @@
 .container {
   display: flex;
   flex-direction: column;
-  border: lightskyblue solid thin;
   max-width: 700px;
-  border-radius: 10px;
   padding: 20px;
   cursor: pointer;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  transition: background 0.5s ease-in-out;
 }
 
 .container:hover {
-  background-color: lightskyblue;
+  background-color: #e0e0e0;
 }
 
 .location {
@@ -22,7 +21,6 @@
 }
 
 .date {
-  color: grey;
   margin-bottom: 0;
 }
 

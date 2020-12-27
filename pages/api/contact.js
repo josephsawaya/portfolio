@@ -42,7 +42,7 @@ export default function (req, res) {
       text: JSON.stringify(req.body),
     };
 
-    transport.sendMail(mailOptions, function (err, info) {
+    transport.sendMail(mailOptions, function (err, _info) {
       if (err) {
         res.statusCode = 400;
         res.setHeader("Content-Type", "application/json");
