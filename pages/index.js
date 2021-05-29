@@ -35,14 +35,18 @@ export default function Home({ contentHtml, projects }) {
             </li>
           </ul>
         </div>
-        <h2>Projects</h2>
+        <div id="i-write-software">
+          <div className="abt">
+            <h1>I like to write software.</h1>
+            <About contentHtml={contentHtml} />
+          </div>
+          <div className="bg"></div>
+        </div>
         <div id="projects">
           {projects.map((val) => {
             return <ProjectStub val={val} key={val.title} />;
           })}
         </div>
-        <About contentHtml={contentHtml} />
-
         <div id="contact">
           <Form />
         </div>
